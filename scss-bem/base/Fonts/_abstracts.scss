@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto:ital@1&display=swap');
+$font-body: "Roboto", sans-serif;
+$font-display: "Indie Flower", cursive;
+
+$color-primary: #28527a;
+$color-primary-light: #55a5f0;
+$color-secondary: #f0a500;
+$color-black: #333333;
+$color-white: #fafafa;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-body;
+  color: black;
+}
+body {
+  font-family: $font-display;
+}
+a {
+  text-decoration: none;
+}
+header {
+  display:flex;
+  flex-direction: column;
+}

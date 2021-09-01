@@ -1,0 +1,11 @@
+@use "../base/Fonts/abstracts" as *;
+
+nav {
+  display:flex;
+  justify-content: space-between;
+  height: 10vh;
+  background-color: $color-primary;
+  padding: 0 40px;
+  align-items: center;
+  font-size: 30px;
+}

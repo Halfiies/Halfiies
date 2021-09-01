@@ -1,0 +1,24 @@
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+main > .gallery {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+main > .gallery >img {
+  height: 300px;
+  width: 200px;
+  padding: 10px;
+  border: 1px solid black;
+
+}
+
+main > .gallery >img:hover {
+  transform: scale(2);
+  transition: 500ms;
+}

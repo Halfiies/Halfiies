@@ -1,0 +1,31 @@
+main {
+  display: flex;
+  justify-content: center;
+
+}
+
+main > .Contact-form {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 10px;
+}
+
+footer {
+  margin-top:70px;
+}
+
+.displayedmessages {
+  display: flex;
+  justify-content: center;
+  margin: 2px, solid, black
+  
+}
+
+.form-title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 20px;
+
+}
+
+

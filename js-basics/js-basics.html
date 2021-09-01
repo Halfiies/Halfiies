@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact.css">
+  
+    <title>Contact</title>
+
+  </head>
+  
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="home.html">Home</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <header>
+      <h1>Susans Art</h1>
+      <br>
+      <p>A mishmash of pleasing things created by Susan</p>
+    </header>
+
+    <main>
+      <form class="Contact-form" onsubmit="return submitmessage(event);">
+        
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email" required>
+       
+        <label for="fullName">Full Name</label>
+        <input type="text" name="fullname" id="fullName" required>
+        
+        <label for="message">Message</label>
+        <textarea name="message" id="message" rows="3" cols="30" required></textarea>
+
+        <input type="submit" value="Submit">
+        <input type ="reset">
+        
+      </form>  
+    </main>
+
+    <footer>
+      <div class="form-title">
+        <h3> Messages </h3>
+        <br />
+        <button onclick="clearmessages();">Clear Messages</button>
+
+      </div>
+      <div class="displayedmessages">
+        <dl id="currentMessages">
+
+        </dl>
+      </div>
+        
+    </footer>
+
+    <script src="index.js">
+     
+    </script>
+    
+  </body>
+</html>

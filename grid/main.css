@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  box-sizing: border-box;
+}
+
+nav {
+  display: none;
+}
+
+.grid {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  font-size: large;
+  font-weight: bold;
+  color: white;
+  padding-top: 20px;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+.grid__cell {
+  background: darkmagenta;
+  margin: 10px;
+  padding: 20px;
+}
+.grid__cell--1 {
+  display: block;
+  background-color: none;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+.grid__cell--5 {
+  height: 100px;
+}
+
+@media screen and (min-width: 550px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    padding-right: 100px;
+  }
+
+  h3 {
+    background-color: darkmagenta;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    border: black solid 2px;
+  }
+
+  .grid__cell--1 {
+    background-color: none;
+    grid-column: 1/span 3;
+    grid-row: 1/span 3;
+  }
+
+  .grid__cell--2 {
+    grid-column: 4/span 2;
+    grid-row: 1/span 1;
+  }
+
+  .grid__cell--3 {
+    grid-column: 4/span 2;
+    grid-row: 2/span 1;
+  }
+
+  .grid__cell--4 {
+    grid-column: 4/span 2;
+    grid-row: 3/span 1;
+  }
+
+  .grid__cell--5 {
+    grid-column: 1/span 5;
+    grid-row: 4/span 1;
+  }
+
+  .grid__cell--6 {
+    grid-column: 1/span 5;
+    grid-row: 5/span 1;
+  }
+}

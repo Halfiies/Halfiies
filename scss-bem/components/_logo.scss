@@ -1,0 +1,6 @@
+@use "../base/Fonts/abstracts" as *;
+ .logo {
+   font-family: $font-display;
+   font-size: 40px;
+   color: $color-white;
+ }
